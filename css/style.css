@@ -1,0 +1,68 @@
+*{
+    padding:0;
+    margin:0;
+    outline:0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color:#ddd;
+    font-size: 0;
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    
+    position: relative;
+    
+}
+
+nav ul li a{
+    padding:20px;
+    text-transform: uppercase;
+    color: red
+    ;
+    display:inline-block;
+    font-size:20px;
+    text-decoration: none;
+    transition: all .5s linear;
+}
+
+
+nav ul li:hover > a{
+    background-color: rgb(235, 38, 38);
+    color: greenyellow;
+
+}
+
+nav ul li ul{
+    position: absolute;
+    left:0;
+    top:120%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s linear;
+    background-color:Black;
+    
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    top:100%;
+}
+
+nav ul li ul li ul{
+    left:100%;
+   
+}
+
+nav ul li ul li:hover > ul{
+
+    top:0;
+}
